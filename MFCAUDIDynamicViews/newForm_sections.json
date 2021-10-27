@@ -1,0 +1,653 @@
+{
+  "forms": [
+    {
+      "form_title": "Vehicle Details",
+      "form_id": "vehicle_details",
+      "section_available": true,
+      "submit_url": "http://65.0.44.167/audi_inspection_apis_v2/public/api/v1/inspect",
+      "submit_request": [
+        {
+          "key": "cus_name",
+          "value_from": "cus_name",
+          "selected_value": ""
+        },
+        {
+          "key": "cus_mobile",
+          "value_from": "cus_mobile",
+          "selected_value": ""
+        },
+        {
+          "key": "cus_email",
+          "value_from": "cus_email",
+          "selected_value": ""
+        },
+        {
+          "key": "insp_regno",
+          "value_from": "insp_regno",
+          "selected_value": ""
+        },
+        {
+          "key": "tdim_regno",
+          "value_from": "tdim_regno",
+          "selected_value": ""
+        },
+        {
+          "key": "insp_date_of_first_registration",
+          "value_from": "insp_date_of_first_registration",
+          "selected_value": ""
+        },
+        {
+          "key": "insp_year",
+          "value_from": "insp_year",
+          "selected_value": ""
+        },
+        {
+          "key": "insp_month_of_registration",
+          "value_from": "insp_month_of_registration",
+          "selected_value": ""
+        },
+        {
+          "key": "insp_city",
+          "value_from": "insp_city",
+          "selected_value": ""
+        },
+        {
+          "key": "insp_make",
+          "value_from": "insp_make",
+          "selected_value": ""
+        },
+        {
+          "key": "insp_model",
+          "value_from": "insp_model",
+          "selected_value": ""
+        },
+        {
+          "key": "insp_variant",
+          "value_from": "insp_variant",
+          "selected_value": ""
+        },
+        {
+          "key": "insp_colour",
+          "value_from": "insp_colour",
+          "selected_value": ""
+        },
+        {
+          "key": "insp_odo_reading",
+          "value_from": "insp_odo_reading",
+          "selected_value": ""
+        },
+        {
+          "key": "tdim_odometer",
+          "value_from": "tdim_odometer",
+          "selected_value": ""
+        },
+        {
+          "key": "insp_fuel",
+          "value_from": "insp_fuel",
+          "selected_value": ""
+        },
+        {
+          "key": "insp_owner",
+          "value_from": "insp_owner",
+          "selected_value": ""
+        },
+        {
+          "key": "insp_chassis_no",
+          "value_from": "insp_chassis_no",
+          "selected_value": ""
+        },
+        {
+          "key": "tdim_chasisno",
+          "value_from": "tdim_chasisno",
+          "selected_value": ""
+        },
+        {
+          "key": "insp_engine_no",
+          "value_from": "insp_engine_no",
+          "selected_value": ""
+        },
+        {
+          "key": "insp_accifree",
+          "value_from": "insp_accifree",
+          "selected_value": ""
+        },
+        {
+          "key": "rc",
+          "value_from": "rc",
+          "selected_value": ""
+        },
+        {
+          "key": "hypothecation",
+          "value_from": "hypothecation",
+          "selected_value": ""
+        },
+        {
+          "key": "hypo_bank_name",
+          "value_from": "hypo_bank_name",
+          "selected_value": ""
+        },
+        {
+          "key": "tdim_rccopy",
+          "value_from": "tdim_rccopy",
+          "selected_value": ""
+        }
+      ],
+      "pre_fill": {
+        "request": {
+          "url": "http://url.com/",
+          "method": "post",
+          "parameters": {
+            "form_id": "vehicle_details"
+          }
+        },
+        "fields": [
+          {
+            "obj_name": "inspection",
+            "key": "cus_name",
+            "ele_id": "cus_name"
+          },
+          {
+            "obj_name": "inspection",
+            "key": "cus_no",
+            "ele_id": "cus_no"
+          },
+          {
+            "obj_name": "inspection",
+            "key": "cus_mobile",
+            "ele_id": "cus_mobile"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "section_name": "Customer/Seller Details",
+          "fields": [
+            {
+              "display_title": "Name",
+              "api_key": "cus_name",
+              "validation_regex": "",
+              "tagid": "ele_cus_name",
+              "field_type": "text",
+              "selected_value": "",
+              "dynamic": false,
+              "default_value": "Select",
+              "max_length": "100",
+              "hint": "Customer name",
+              "required": true
+            },
+            {
+              "display_title": "Mobile Number",
+              "api_key": "cus_mobile",
+              "validation_regex": "",
+              "tagid": "cus_mobile",
+              "field_type": "text",
+              "dynamic": false,
+              "selected_value": "",
+              "default_value": "",
+              "max_length": "10",
+              "hint": "Mobile number",
+              "required": true
+            },
+            {
+              "display_title": "Email Address",
+              "api_key": "cus_email",
+              "validation_regex": "",
+              "tagid": "cus_email",
+              "field_type": "text",
+              "dynamic": false,
+              "selected_value": "",
+              "default_value": "",
+              "max_length": "100",
+              "hint": "Email address",
+              "required": false
+            }
+          ]
+        },
+        {
+          "section_name": "Vehicle Details",
+          "fields": [
+            {
+              "display_title": "Registration Number",
+              "api_key": "insp_regno",
+              "validation_regex": "",
+              "tagid": "insp_regno",
+              "field_type": "text",
+              "dynamic": false,
+              "selected_value": "",
+              "default_value": "",
+              "max_length": "10",
+              "hint": "Please enter registration number",
+              "required": true
+            },
+            {
+              "display_title": "Registration Image",
+              "api_key": "tdim_regno",
+              "validation_regex": "",
+              "tagid": "tdim_regno",
+              "field_type": "image",
+              "selected_value": "",
+              "hint": "",
+              "max_length": "",
+              "dynamic": false,
+              "default_value": "",
+              "required": false
+            },
+            {
+              "display_title": "Date of First Registration",
+              "api_key": "insp_date_of_first_registration",
+              "validation_regex": "",
+              "tagid": "insp_date_of_first_registration",
+              "field_type": "date",
+              "selected_value": "",
+              "dynamic": false,
+              "default_value": "",
+              "max_length": "17",
+              "hint": "Please enter date of first registration",
+              "required": true
+            },
+            {
+              "display_title": "Manufacturing Year",
+              "api_key": "insp_year",
+              "validation_regex": "",
+              "tagid": "insp_year",
+              "field_type": "options",
+              "dynamic": true,
+              "selected_value": "",
+              "default_value": "Select",
+              "max_length": "4",
+              "hint": "Select",
+              "required": true,
+              "dynamic_value": {
+                "api_url": "http://audipublic.audiapprovedplus.in/publicapi/api/mobile",
+                "type": "POST",
+                "request_value": {
+                  "for_": "year"
+                },
+                "request_value_dynamic": [],
+                "value_type": "array"
+              }
+            },
+            {
+              "display_title": "Manufacturing Month",
+              "api_key": "insp_month_of_registration",
+              "validation_regex": "",
+              "tagid": "insp_month_of_registration",
+              "field_type": "options",
+              "dynamic": true,
+              "default_value": "Select",
+              "max_length": "4",
+              "selected_value": "",
+              "hint": "Select",
+              "required": true,
+              "dynamic_value": {
+                "api_url": "http://audipublic.audiapprovedplus.in/publicapi/api/mobile",
+                "type": "POST",
+                "request_value": {
+                  "for_": "month"
+                },
+                "request_value_dynamic": [
+                  {
+                    "tagid": "insp_year",
+                    "api_key": "year"
+                  }
+                ],
+                "value_type": "array"
+              }
+            },
+            {
+              "display_title": "City",
+              "api_key": "insp_city",
+              "validation_regex": "",
+              "tagid": "insp_city",
+              "field_type": "options",
+              "dynamic": true,
+              "default_value": "Select",
+              "max_length": "100",
+              "selected_value": "",
+              "hint": "Select",
+              "required": true,
+              "dynamic_value": {
+                "api_url": "http://audipublic.audiapprovedplus.in/publicapi/api/mobile",
+                "type": "POST",
+                "request_value": {
+                  "for_": "location"
+                },
+                "request_value_dynamic": [],
+                "value_type": "array"
+              }
+            },
+            {
+              "display_title": "Make",
+              "api_key": "insp_make",
+              "validation_regex": "",
+              "tagid": "insp_make",
+              "field_type": "options",
+              "dynamic": true,
+              "selected_value": "",
+              "default_value": "Select",
+              "max_length": "100",
+              "hint": "Select",
+              "required": true,
+              "dynamic_value": {
+                "api_url": "http://audipublic.audiapprovedplus.in/publicapi/api/mobile",
+                "type": "POST",
+                "request_value": {
+                  "for_": "make"
+                },
+                "request_value_dynamic": [
+                  {
+                    "tagid": "insp_year",
+                    "api_key": "insp_year"
+                  }
+                ],
+                "value_type": "Collection(json collection)/Array/String"
+              }
+            },
+            {
+              "display_title": "Model",
+              "api_key": "insp_model",
+              "validation_regex": "",
+              "tagid": "insp_model",
+              "field_type": "options",
+              "dynamic": true,
+              "selected_value": "",
+              "default_value": "Select",
+              "max_length": "100",
+              "hint": "Select",
+              "required": true,
+              "dynamic_value": {
+                "api_url": "http://audipublic.audiapprovedplus.in/publicapi/api/mobile",
+                "type": "Post",
+                "request_value": {
+                  "for_": "model"
+                },
+                "request_value_dynamic": [
+                  {
+                    "tagid": "insp_year",
+                    "api_key": "insp_year"
+                  },
+                  {
+                    "tagid": "insp_make",
+                    "api_key": "insp_make"
+                  }
+                ],
+                "value_type": "array"
+              }
+            },
+            {
+              "display_title": "Variant",
+              "api_key": "insp_variant",
+              "validation_regex": "",
+              "tagid": "insp_variant",
+              "field_type": "options",
+              "dynamic": true,
+              "selected_value": "",
+              "default_value": "Select",
+              "max_length": "100",
+              "hint": "Select",
+              "required": true,
+              "dynamic_value": {
+                "api_url": "http://audipublic.audiapprovedplus.in/publicapi/api/mobile",
+                "type": "Post",
+                "request_value": {
+                  "for_": "variant"
+                },
+                "request_value_dynamic": [
+                  {
+                    "tagid": "insp_year",
+                    "api_key": "insp_year"
+                  },
+                  {
+                    "tagid": "insp_make",
+                    "api_key": "insp_make"
+                  },
+                  {
+                    "tagid": "insp_model",
+                    "api_key": "insp_model"
+                  }
+                ],
+                "value_type": "array"
+              }
+            },
+            {
+              "display_title": "Colour",
+              "api_key": "insp_colour",
+              "validation_regex": "",
+              "tagid": "insp_colour",
+              "field_type": "options",
+              "dynamic": true,
+              "default_value": "Select",
+              "max_length": "100",
+              "selected_value": "",
+              "hint": "Select",
+              "required": true,
+              "dynamic_value": {
+                "api_url": "http://audipublic.audiapprovedplus.in/publicapi/api/mobile",
+                "type": "POST",
+                "request_value": {
+                  "for_": "color"
+                },
+                "request_value_dynamic": [],
+                "value_type": "array"
+              }
+            },
+            {
+              "display_title": "Odometer Reading",
+              "api_key": "insp_odo_reading",
+              "validation_regex": "",
+              "tagid": "insp_odo_reading",
+              "field_type": "text",
+              "dynamic": false,
+              "selected_value": "",
+              "default_value": "",
+              "max_length": "6",
+              "hint": "Odometer reading",
+              "required": true
+            },
+            {
+              "display_title": "Odometer Picture",
+              "api_key": "tdim_odometer",
+              "validation_regex": "",
+              "tagid": "tdim_odometer",
+              "field_type": "image",
+              "hint": "",
+              "selected_value": "",
+              "max_length": "",
+              "dynamic": false,
+              "default_value": "",
+              "required": false
+            },
+            {
+              "display_title": "Fuel Type",
+              "api_key": "insp_fuel",
+              "validation_regex": "",
+              "tagid": "insp_fuel",
+              "field_type": "options",
+              "dynamic": false,
+              "selected_value": "",
+              "default_value": "Update",
+              "max_length": "50",
+              "hint": "Update",
+              "required": true,
+              "static_value": {
+                "value_type": "array",
+                "value": [
+                  "Petrol",
+                  "Diesel",
+                  "Petrol+CNG",
+                  "Petrol + LPG",
+                  "Hybrid",
+                  "Electric"
+                ]
+              }
+            },
+            {
+              "display_title": "No.Of Owners",
+              "api_key": "insp_owner",
+              "validation_regex": "",
+              "tagid": "insp_owner",
+              "field_type": "options",
+              "dynamic": false,
+              "selected_value": "",
+              "default_value": "Update",
+              "max_length": "1",
+              "hint": "Update",
+              "required": true,
+              "static_value": {
+                "value_type": "array",
+                "value": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5"
+                ]
+              }
+            },
+            {
+              "display_title": "Chassis Number",
+              "api_key": "insp_chassis_no",
+              "validation_regex": "",
+              "tagid": "insp_chassis_no",
+              "field_type": "text",
+              "dynamic": false,
+              "selected_value": "",
+              "default_value": "",
+              "max_length": "17",
+              "hint": "Please enter chassis number",
+              "required": true
+            },
+            {
+              "display_title": "Chassis Picture",
+              "api_key": "tdim_chasisno",
+              "validation_regex": "",
+              "tagid": "tdim_chasisno",
+              "field_type": "image",
+              "hint": "",
+              "selected_value": "",
+              "max_length": "",
+              "dynamic": false,
+              "default_value": "",
+              "required": false
+            },
+            {
+              "display_title": "Engine Number",
+              "api_key": "insp_engine_no",
+              "validation_regex": "",
+              "tagid": "insp_engine_no",
+              "field_type": "text",
+              "dynamic": false,
+              "selected_value": "",
+              "default_value": "",
+              "max_length": "20",
+              "hint": "Please enter engine number",
+              "required": true
+            },
+            {
+              "display_title": "Vehicle Met Accident",
+              "api_key": "insp_accifree",
+              "validation_regex": "",
+              "tagid": "insp_accifree",
+              "field_type": "options",
+              "dynamic": false,
+              "selected_value": "",
+              "default_value": "Update",
+              "max_length": "50",
+              "hint": "Update",
+              "required": true,
+              "static_value": {
+                "value_type": "array",
+                "value": [
+                  "No",
+                  "Yes"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "section_name": "RC & Hypothecation",
+          "fields": [
+            {
+              "display_title": "RC Available",
+              "api_key": "rc",
+              "validation_regex": "",
+              "tagid": "rc",
+              "field_type": "options",
+              "dynamic": false,
+              "selected_value": "",
+              "default_value": "Update",
+              "max_length": "50",
+              "hint": "Update",
+              "required": true,
+              "static_value": {
+                "value_type": "array",
+                "value": [
+                  "Original",
+                  "Duplicate",
+                  "NA"
+                ]
+              }
+            },
+            {
+              "display_title": "Hypothecation",
+              "api_key": "hypothecation",
+              "validation_regex": "",
+              "tagid": "hypothecation",
+              "field_type": "options",
+              "dynamic": false,
+              "selected_value": "",
+              "default_value": "Update",
+              "max_length": "10",
+              "hint": "Update",
+              "required": true,
+              "static_value": {
+                "value_type": "array",
+                "value": [
+                  "Yes",
+                  "No"
+                ]
+              }
+            },
+            {
+              "display_title": "Hypothecation Bank Name",
+              "api_key": "hypo_bank_name",
+              "validation_regex": "",
+              "tagid": "hypo_bank_name",
+              "field_type": "options",
+              "dynamic": true,
+              "default_value": "Update",
+              "max_length": "50",
+              "selected_value": "",
+              "hint": "Update",
+              "required": true,
+              "dynamic_value": {
+                "api_url": "http://audipublic.audiapprovedplus.in/publicapi/api/mobile",
+                "type": "POST",
+                "request_value": {
+                  "for_": "bank"
+                },
+                "request_value_dynamic": [],
+                "value_type": "array"
+              }
+            },
+            {
+              "display_title": "RC Number Picture",
+              "api_key": "tdim_rccopy",
+              "validation_regex": "",
+              "tagid": "tdim_rccopy",
+              "field_type": "image",
+              "hint": "",
+              "selected_value": "",
+              "max_length": "",
+              "dynamic": false,
+              "default_value": "",
+              "required": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

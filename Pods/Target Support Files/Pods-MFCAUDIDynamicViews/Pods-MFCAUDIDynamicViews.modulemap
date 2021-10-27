@@ -1,0 +1,6 @@
+framework module Pods_MFCAUDIDynamicViews {
+  umbrella header "Pods-MFCAUDIDynamicViews-umbrella.h"
+
+  export *
+  module * { export * }
+}

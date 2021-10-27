@@ -1,0 +1,28 @@
+PODS:
+  - IQKeyboardManagerSwift (6.5.6)
+  - KRActivityIndicatorView (3.0.7)
+  - KRProgressHUD (3.4.7):
+    - KRActivityIndicatorView (= 3.0.7)
+  - STPopup (1.8.7)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - KRProgressHUD
+  - STPopup
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - KRActivityIndicatorView
+    - KRProgressHUD
+    - STPopup
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  KRActivityIndicatorView: ad69e89c4ce40c986cf580595be4829dcad0e35a
+  KRProgressHUD: a248f0bc6c9c2aed40a37b76e03ffecc7f85c887
+  STPopup: a9045557bc48a0df51fbb7bf0544447c5fe84d34
+
+PODFILE CHECKSUM: 074cd4487ce698288b7a9878a6ec56d18da1ef80
+
+COCOAPODS: 1.8.4
